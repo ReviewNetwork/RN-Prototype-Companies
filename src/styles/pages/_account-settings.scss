@@ -1,0 +1,36 @@
+.account-settings {
+
+    .card-title {
+        text-align: left;
+    }
+
+    .card {
+        margin-bottom: 8px;
+    }
+
+    .card-btn {
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        line-height: 40px;
+        padding: 0;
+        text-align: center;
+        box-shadow: 0 6px 12px 0 rgba(38,41,53,0.2);
+        transition: box-shadow 0.2s ease-in;
+
+        &:hover,
+        &:active {
+            box-shadow: 0 3px 6px 0 rgba(38,41,53,0.2);
+            color: white;
+        }
+    }
+}
+
+.rew-version {
+    margin-top: 20px;
+}
+
+.report-issue-link-btn {
+    display: block;
+}

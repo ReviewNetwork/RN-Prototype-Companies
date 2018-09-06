@@ -1,0 +1,85 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  background-color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+#root,
+.wrapper,
+.page,
+.authComponent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+footer {
+  margin-top: 48px;
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  padding: 18px 0;
+  font-size: 13px;
+  color: #666;
+  background-color: #3E4356;
+  text-align: center;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  font-size: 12px;
+  color: #9A9FB3;
+
+  a {
+    margin-left: 0.5ch;
+    &:first-child {
+      margin-right: 0.5ch;
+    }
+  }
+}
+
+.list-styled {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  margin: 10px 20px 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.container {
+  @media screen and (max-width: 480px) {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,92 @@
+.wallet-balance {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 32px;
+}
+
+.wallet-title {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    margin-bottom: 4px;
+    color: #FFFFFF;
+}
+
+.faucet {
+    .card-title {
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        line-height: 16px;
+        margin-bottom: 8px;
+        color: #3E4356;
+        text-align: left;
+    }
+    
+    .card-subtitle {
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        line-height: 16px;
+        margin-bottom: 4px;
+        color: #3E4356;
+        text-align: left;
+    }
+
+    .card {
+        padding: 16px;
+    }
+}
+
+.wallet .request-buttons {
+    > .card {
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .card-btn.card-btn-linear {
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        line-height: 40px;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.wallet-address {
+    font-size: 14px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    i {
+        font-size: 20px;
+        cursor: pointer;
+        transition: all .1s ease;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+
+.faucet-text {
+    margin: 10px 0 16px;
+    font-size: 14px;
+    line-height: 20px;
+
+    strong {
+        font-weight: 600;
+        font-style: italic;
+    }
+}
+
+.wallet {
+    .card {
+        margin-bottom: 16px;
+    }
+}

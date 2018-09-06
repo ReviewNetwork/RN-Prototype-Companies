@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="186px" height="28px" viewBox="0 0 186 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C51BC2" offset="0%"></stop>
+            <stop stop-color="#7853BF" offset="49.9793145%"></stop>
+            <stop stop-color="#4F76DF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="settings" transform="translate(-233.000000, -114.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="sidenav" transform="translate(233.000000, 82.000000)">
+                <g id="manu_item" transform="translate(0.000000, 32.000000)">
+                    <polygon id="Rectangle" points="0 0 178 0 186 14 178 28 0 28"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

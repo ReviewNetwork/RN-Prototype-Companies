@@ -1,0 +1,84 @@
+.create-survey {
+  .form-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .total-label {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .total-price {
+    color: #b3b3b3;
+  }
+
+  .create-survey-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .form-group:first-child {
+    margin-top: 0;
+  }
+
+  .card.card-dark {
+    margin-bottom: 8px;
+  }
+
+}
+
+.group-half-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-half {
+  width: 48%;
+}
+
+.add-question {
+  margin-bottom: 16px;
+
+  button {
+    color: #9A9FB3;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+.create-survey-actions {
+  .card.card-btn {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 6px 12px 0 rgba(38,41,53,0.2);
+    transition: box-shadow 0.2s ease-in;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 3px 6px 0 rgba(38,41,53,0.2);
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "rules": {
+    "quotes": [0, "double", { "allowTemplateLiterals": true }],
+    "prettier/prettier": ["error", { "singleQuote": true }]
+  }
+}

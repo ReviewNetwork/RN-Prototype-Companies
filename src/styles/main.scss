@@ -1,0 +1,27 @@
+// Base
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/forms';
+@import 'base/buttons';
+
+// Components
+@import 'components/page';
+@import 'components/navbar';
+@import 'components/question-editor.scss';
+@import 'components/range-form';
+@import 'components/choice-form';
+@import 'components/yes-no-form';
+@import 'components/register';
+@import 'components/login';
+@import 'components/box';
+@import 'components/survey-details';
+@import 'components/progress';
+@import 'components/loader';
+
+// pages
+@import 'pages/create-survey';
+@import 'pages/wallet';
+@import 'pages/account-settings';
+@import 'pages/market-research';
