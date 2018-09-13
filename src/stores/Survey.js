@@ -72,15 +72,15 @@ export default class Survey {
       );
       console.log({ creation });
 
-      console.log('Starting funding!!!');
-      this.rootStore.ux.changeLoadingText('Transferring funds to the survey...');
-      const funding = await surveyService.fund(surveyJsonHash, totalFunds);
-      console.log({ funding });
+      // console.log('Starting funding!!!');
+      // this.rootStore.ux.changeLoadingText('Transferring funds to the survey...');
+      // const funding = await surveyService.fund(surveyJsonHash, totalFunds);
+      // console.log({ funding });
 
-      console.log('Starting survey!!!');
-      this.rootStore.ux.changeLoadingText('Starting the survey...');
-      const starting = await surveyService.start(surveyJsonHash);
-      console.log({ starting });
+      // console.log('Starting survey!!!');
+      // this.rootStore.ux.changeLoadingText('Starting the survey...');
+      // const starting = await surveyService.start(surveyJsonHash);
+      // console.log({ starting });
     } catch (ex) {
       console.log('Welp, error', ex);
       if(ex.toString().indexOf('insufficient funds') !== -1) {

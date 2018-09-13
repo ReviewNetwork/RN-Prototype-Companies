@@ -224,7 +224,7 @@ class SurveyDetails extends React.Component {
 
                 <div className="survey-details-bar-info-box">
                   <div className="survey-details__bar-info survey-details__bar-info--right">
-                    {(responseCount / survey.maxAnswers) * 100}%
+                    {((responseCount / survey.maxAnswers) * 100).toFixed(0)}%
                   </div>
 
                   <div className="survey-details__bar-info">

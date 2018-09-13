@@ -5,6 +5,14 @@ import surveyService from '../services/survey';
 import wallet from '../services/wallet';
 import Protected from '../components/Protected';
 import SurveyDetails from '../components/SurveyDetails';
+import reviewNetwork from '../services/contracts/review-network';
+
+const surveyStatuses = {
+  0: 'IDLE',
+  1: 'FUNDED',
+  2: 'IN_PROGRESS',
+  3: 'COMPLETED'
+}
 
 @Protected
 @observer
@@ -35,7 +43,6 @@ export default class MarketResearch extends Component {
             surveys: events.map(e => ({
               ...e.returnValues,
               blockNumber: e.blockNumber,
-              status: e.status,
             })),
           },
           () => {
@@ -49,8 +56,14 @@ export default class MarketResearch extends Component {
     this.setState({ detailsLoading: val });
   }
 
-  selectSurvey = survey => {
+  selectSurvey = async survey => {
+    const rn = await reviewNetwork.contract;
+
     this.setState({ selectedSurvey: null });
+
+    let status = await rn.methods.getSurveyStatus(survey.surveyJsonHash).call()
+    survey.status = surveyStatuses[status];
+
     setTimeout(async () => {
       let rewardPerSurveyFormatted = await wallet.getTokenAmountFormatted(survey.rewardPerSurvey);
       this.setState({ selectedSurvey: { ...survey, rewardPerSurveyFormatted } });

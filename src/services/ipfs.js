@@ -50,7 +50,7 @@ class Ipfs {
           url: this.cacheUploadUrl,
           headers: {
             Accept: 'application/json',
-            'Content-Type': 'application/json',
+            // 'Content-Type': 'application/json',
           },
           method: 'POST',
           data: {
@@ -91,7 +91,7 @@ class Ipfs {
       url: fullUrl,
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        // 'Content-Type': 'application/json',
       },
       method,
       data: payload,
